@@ -1,12 +1,14 @@
-# IMPORTANTE: Hacer siempre antes de editar archivos del proyecto
-* Abrir el proyecto desde la carpeta en VS Code (Click derecho > Open with Code)
-* En VS Code abrir la terminal con CTRL + ñ
+# IMPORTANTE
+Hacer esto siempre antes de editar archivos del proyecto
+1. Abrir el proyecto desde la carpeta en VS Code (Click derecho > Open with Code)
+2. En VS Code abrir la terminal con (CTRL + ñ)
+3. Escribir el siguiente comando
 ```bash
 # Traer cambios de repositorio remoto
 git pull
 ```
 # BUENAS PRÁCTICAS
-* Realizar commits pensando en agrupar cambios que cuando se nombre el cambio pueda ser entendido por cualquier persona (ej: Gráfica y función de outliers).
+* Realizar commits pensando en agrupar cambios que cuando se nombre el cambio pueda ser entendido por cualquier persona (ejemplos de commits: Gráfica y función de outliers, cambios en el modelo predictivo, cambios en el hiperparámetro, eliminación de datos nulos, etc.).
 * No hacer commits de cambios muy pequeños (a no ser que sea un cambio muy importante).
 * Si se hacen 2 cosas importantes en el proyecto, hacer 2 commits.
 
@@ -32,9 +34,8 @@ Para instalar Git en Windows, descargue el instalador desde la página web de Gi
 
 
 
-# Configuración de Git desde terminal 
-Abrir terminal de Git Bash o en VS Code con Ctrl + ñ
-## Configurar nombre de usuario
+# Configuración de Git 
+Abrir terminal de Git Bash, buscando Git Bash en el buscador de Windows y escribir el siguiente comando
 ```bash
 git config --global user.name "nombre_usuario"
 ```
@@ -50,19 +51,23 @@ git config --list
 
 
 
-# Integrantes del proyecto
+# Proceso para integrantes del proyecto
+Este proceso se debe realizar una sola vez para clonar el repositorio en la computadora local
 
-## Ir a la Git Bash y luego al escritorio
+## 1. Ir a la Git Bash y escribir el siguiente comando
 ```bash
 cd Desktop
 ```
-## Clona el repositorio (Una sola vez)
+## 2. Clona el repositorio en la carpeta Desktop
 ```bash
 git clone <url_repositorio>
 ```
-## Conectar al repositorio remoto
-En carpeta del proyecto en VS Code escribir CTRL + ñ para abrir terminal
+## 3. Abrir el proyecto desde la carpeta en VS Code
+(Click derecho en carpeta > Open with Code)
+
+## 4. Verificar el status de los archivos
+En VS Code apretar (Ctrl + ñ) para abrir la terminal y escribir el siguiente comando
 ```bash
-git remote add origin <url_repositorio>
+git status
 ```
-Estamos diciendo que queremos que se vincule el repositorio local con el repositorio remoto seleccionado.
+## 5. Ya podría empezar a trabajar en el proyecto y hacer commits
