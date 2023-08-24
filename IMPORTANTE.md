@@ -51,8 +51,11 @@ git config --list
 
 
 # Integrantes del proyecto
-## Agregar colaboradores
-Ir a la página de Github y agregar colaboradores en Settings > Manage access > Invite a collaborator
+
+## Ir a la Git Bash y luego al escritorio
+```bash
+cd Desktop
+```
 ## Clona el repositorio (Una sola vez)
 ```bash
 git clone <url_repositorio>
