@@ -1,29 +1,3 @@
-###################### Estandarizar las variables numéricas################
-def scaler(X, X_train, X_test):
-    """Estandariza las variables numéricas de un conjunto de datos
-
-    Args:
-        X (_type_): Conjunto de datos a estandarizar
-        X_train (_type_): Conjunto de entrenamiento
-        X_test (_type_): Conjunto de prueba
-
-    Returns:
-        _type_: Conjunto de datos con las variables numéricas estandarizadas
-    """
-    # Seleccionar variables numéricas int64 y float64 y categóricas object
-    numeric_columns = list(X.select_dtypes(include=["int64", "float64"]).columns)
-    categorical_columns = list(X.select_dtypes("object").columns)
-
-    # Estandarizar las variables numéricas
-    from sklearn.preprocessing import StandardScaler
-
-    scaler = StandardScaler()
-    X_train[numeric_columns] = scaler.fit_transform(X_train[numeric_columns])
-    X_test[numeric_columns] = scaler.transform(X_test[numeric_columns])
-
-    return print("Variables numéricas estandarizadas")
-
-
 ##############################ENTRAR MODELOS CON CV Y METRICA################################################################
 # Cargar librerías
 from sklearn.model_selection import cross_validate  # Validación cruzada
